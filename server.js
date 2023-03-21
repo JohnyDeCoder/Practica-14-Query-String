@@ -16,8 +16,12 @@ app.get('/', function (req, res) {
     res.send('<html><head><link rel="stylesheet" type="text/css" href="assets/style.css"></head><body><h1>Hello World!</h1></body></html>')
 });
 
+// app.get('/person/:id', function (req, res) {
+//     res.render('person', { ID: req.params.id, Qstr: req.query.qstr });
+// });
+
 app.get('/person/:id', function (req, res) {
-    res.render('person', { ID: req.params.id, Qstr: req.query.qstr });
+    res.render('person', { ID: req.params.id, Message: req.query.message, Times: req.query.times });
 });
 
 app.listen(port);

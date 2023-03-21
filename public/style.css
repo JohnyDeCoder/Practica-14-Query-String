@@ -2,20 +2,6 @@ body {
     font-family: 'Roboto Codensed', sans-serif;
 }
 
-table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
-}
-
-th {
-    background-color: #00c3ff;
-    color: #ffffff;
-    padding: 10px;
-}
-
-td:nth-child(even) {
-    background-color: #ccebff;
-    color: #333333;
-    padding: 10px;
+h1 {
+    color: #ff2a2a;
 }

@@ -10,8 +10,44 @@
 </head>
 
 <body>
-    <h1>Person: <%= ID %></h1>
-    <h2>Query string value: <%= Qstr %></h2>
+    <h1>
+        Person Name: <%= ID %>
+    </h1>
+    <h2>
+        Mensaje: <%= Message %>
+    </h2>
+
+    <ul>
+        <% switch (Message) {
+            case 'Bienvenido': %>
+                <% for (let i = 1; i <= Times; i++) { %>
+                    <li>
+                        <%= Message %> <%= ID %>
+                    </li>
+                <% } %>
+                <% break;
+            case 'Hola': %>
+                <% for (let i = 1; i <= Times; i++) { %>
+                    <li>
+                        <%= Message %> <%= ID %>
+                    </li>
+                <% } %>
+                <% break;
+            case 'Adios': %>
+                <% for (let i = 1; i <= Times; i++) { %>
+                    <li>
+                        <%= Message %> <%= ID %>
+                    </li>
+                <% } %>
+                <% break;
+            default: %>
+                    <li>
+                        Mensage erróneo.
+                    </li>
+                <% break;
+        } %>
+    </ul>
+
 </body>
 
 </html>
